@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cfd8aa0d0bfdc946bfbb9dc1cfce46f, type: 3}
+  m_Name: GameplaySettings
+  m_EditorClassIdentifier: 
+  lumberjackMoveSpeed: 1.5
+  lumberjackChopSpeed: 5
+  woodPrice: 10
+  levelPrefab: {fileID: 2812970027057810896, guid: 934cc890bc6b1fd4ebf52680466ca3f7,
+    type: 3}
+  sawmillPrefab: {fileID: 1768053566715031394, guid: 2ee6d306216dabb48b64c455a1b50087,
+    type: 3}
+  lumberjackPrefab: {fileID: 6198480457816962918, guid: cc41d17d84a8a644887aa4d3f6ae4182,
+    type: 3}
+  treePrefab: {fileID: 4093736331587296396, guid: eec8e69bd9f6493458279eb9e9119ce9,
+    type: 3}
+  priceProgression:
+  - multiplier: 1
+    price: 0
+  - multiplier: 1.5
+    price: 50
+  - multiplier: 2
+    price: 120
+  speedProgression:
+  - multiplier: 1
+    price: 0
+  - multiplier: 1.5
+    price: 60
+  - multiplier: 2
+    price: 150
+  sawmillProgression:
+  - multiplier: 0
+    price: 0
+  - multiplier: 0
+    price: 100
+  - multiplier: 0
+    price: 200

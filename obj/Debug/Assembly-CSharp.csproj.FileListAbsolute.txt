@@ -1,0 +1,2 @@
+F:\UnityProjects2021\IdleSawmill\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+F:\UnityProjects2021\IdleSawmill\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
