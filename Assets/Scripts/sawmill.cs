@@ -24,6 +24,7 @@ public class sawmill : MonoBehaviour
     {
         myLumberjack.ChangeData(_data);
     }
+    
     public void GetIncome(int _money)
     {
         dependencyManager.Instance._playerManager.IncreaseMoney(_money);

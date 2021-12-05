@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -13,6 +14,11 @@ public class upPanelUI : MonoBehaviour
         localMoney = _money;
         moneyText.text = _money.ToString() + "$";
         dependencyManager.Instance._playerManager.OnMoneyChange += MoneyUpdate;
+    }
+
+    private void OnDisable()
+    {
+        dependencyManager.Instance._playerManager.OnMoneyChange -= MoneyUpdate;
     }
 
     void MoneyUpdate(int _money)

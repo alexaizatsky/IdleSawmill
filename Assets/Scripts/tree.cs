@@ -14,11 +14,13 @@ public class tree : MonoBehaviour
     {
         myForest = _forest;
     }
+    
     public void StartCuttingMe(lumberjack _lumberjack)
     {
         myLumberjack = _lumberjack;
         myLumberjack.OnCuttingTreeUpdate += CuttingUpdate;
     }
+    
     public void CuttingUpdate(float _progress)
     {
         if (_progress<1)

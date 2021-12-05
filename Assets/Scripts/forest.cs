@@ -7,6 +7,8 @@ public class forest : MonoBehaviour
 {
     public List<tree> myTrees = new List<tree>();
     private GameObject treePrefab;
+    
+    
     public void StartInit()
     {
        treePrefab = dependencyManager.Instance._gameplaySettings.treePrefab;

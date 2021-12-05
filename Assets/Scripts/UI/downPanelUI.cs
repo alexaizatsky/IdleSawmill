@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -25,11 +26,18 @@ public class downPanelUI : MonoBehaviour
 
     }
 
+    private void OnDisable()
+    {
+        dependencyManager.Instance._playerManager.OnLevelsChange -= UpdateData;
+        dependencyManager.Instance._playerManager.OnMoneyChange -= UpdateMoney;
+    }
+
     void UpdateMoney(int _money)
     {
         defaultData.money = _money;
         UpdateData(defaultData);
     }
+    
     void UpdateData(myData _data)
     {
         localMoney = _data.money;

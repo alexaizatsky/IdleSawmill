@@ -28,6 +28,7 @@ public class lumberjack : MonoBehaviour
    private lumberjackUI _lumberjackUi;
    private sawmill mySawmill;
    private gameplaySettingsSO gs;
+   
    public void Init(sawmill _sawmill, forest _forest, myData _data)
    {
       gs = dependencyManager.Instance._gameplaySettings;
@@ -35,6 +36,7 @@ public class lumberjack : MonoBehaviour
       mySawmill = _sawmill;
       ChangeData(_data);
       _lumberjackUi = GetComponent<lumberjackUI>();
+      _lumberjackUi.Init();
       SetState(State.moveToForest);
       
    }
@@ -107,6 +109,7 @@ public class lumberjack : MonoBehaviour
       mySawmill.GetIncome(woodPrice);
       SetState(State.moveToForest);
    }
+   
    IEnumerator ChopTree(float _time)
    {
       float timer = 0;
